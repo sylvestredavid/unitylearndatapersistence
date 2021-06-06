@@ -36,7 +36,6 @@ public class GameManager : MonoBehaviour
     public void LoadScore()
     {
         string path = Application.persistentDataPath + "/savefile.json";
-        Debug.Log(path);
         if (File.Exists(path))
         {
             string json = File.ReadAllText(path);
